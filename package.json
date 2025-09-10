@@ -1,0 +1,24 @@
+{
+  "name": "node-entry-app",
+  "version": "1.0.0",
+  "description": "This is a beginner nodejs backend server project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "beginner-app",
+    "crm-tool"
+  ],
+  "author": "Manny Well",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.16.4"
+  }
+}
