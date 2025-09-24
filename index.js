@@ -7,12 +7,14 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/uploads", express.static("uploads"));
 
 connectDB();
 
 // Import routes
 const users = require("./routes/users");
 const auth = require("./routes/auth");
+const posts = require("./routes/posts");
 
 // app.route('users').get((req, res) => {
 //     res.send('Get all users')
@@ -21,6 +23,7 @@ const auth = require("./routes/auth");
 // Set up routes
 app.use("/users", users);
 app.use("/auth", auth);
+app.use("/posts", posts);
 
 // Set port value
 const port = 3444;
